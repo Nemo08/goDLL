@@ -1,3 +1,5 @@
+gcc -shared -pthread -o goDLL.dll goDLL.c exportgo.a -lWinMM -lntdll -lWS2_32
+
 # goDLL
 Project to show people how to create MS Windows golang DLL, then load it into lazarus program, or a plain fpc command line program or another golang exe.  This implies you can also use the DLL in plain C or C++ Visual Studio or GCC project. Should also be able to port this to bsd/linux/macOS
 
